@@ -1,0 +1,117 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	background: rgb(214,228,255);
+	background: radial-gradient(circle, rgba(214,228,255,1) 0%, rgba(141,215,243,1) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}	
+.row {
+	display: inline;
+}
+.col-2 {
+	display: inline;
+	column-width: 40px auto;
+}
+.col-2 img {
+	float: left;
+	margin-right: 2em;
+}
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+label {
+	display: inline-block;
+	width: 180px;	
+}
+
+input[type='text'] {
+	width: 97%;
+	padding: 4px;
+	border-radius: 5px;
+	border: 1px #ccc solid;
+}
+
+input[type='number'] {
+	width: 50px;
+	padding: 4px;
+	border-radius: 5px;
+	border: 1px #ccc solid;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+header {
+	border-bottom: 3px #FFB400 solid;
+}
+
+footer {
+	border-top: 3px #FFB400 solid;
+	text-align: center;
+	padding-top: 5px; 
+}
+
+main {
+	padding-bottom: 20px;
+}
+
+a.start {
+	display: inline-block;
+	color: wheat;
+	background: #00135D;
+	padding: 6px 13px;
+}
+a.start :hover{
+	color: black;
+	background-color: #FFB400;
+}
+
+.current {
+	padding: 10px;
+	background: #f4f4f4;
+	border: #cc dotted 1px;
+	margin: 20px 0 10px 0;
+	
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  input[type=submit] {
+	width: 100%;
+	background-color: #00135D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  input[type=submit]:hover {
+	background-color: #FFB400;
+	color: black;
+	transition: 0.3s;
+  }
+
+@media only screen and (max-width: 960px) {
+ .container {
+	width: 80%;
+ }
+}
