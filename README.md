@@ -15,3 +15,18 @@ Basic Quiz application that allows tutors to set questions and then provide a ra
     6. Final.php – is used to provide the results of the quiz
     7. Index.php- is the default php that displays.
     8. Questions.php- is used to connect php to the database where questions are.
+    
+## Installation
+
+```
+$db_host = 'localhost';
+$db_name = 'quiz';
+$db_user = 'root';
+$db_pass = '';
+
+CREATE SCHEMA `quiz`
+
+CREATE TABLE `quiz`.`questions_tak` ( `question_number` INT NOT NULL , `text` TEXT NOT NULL , PRIMARY KEY (`question_number`));
+
+CREATE TABLE `quiz`.`choices_tak` ( `id` INT NOT NULL AUTO_INCREMENT , `question_number` INT NOT NULL , `is_correct` TINYINT NOT NULL DEFAULT '0' , `text` TEXT NOT NULL , PRIMARY KEY (`id`));
+```
